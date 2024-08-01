@@ -31,7 +31,30 @@ This project presents a blockchain-based tender and contract management system d
 3. Install dependencies
    '''sh
    npm install
-4. Setup the connection between Ganache and Metamask
-5. Compile the smart contract
+5. Compile the smart contract this can be done in two environments:
+
+  I. Deploying a Smart Contract Using Remix
+
+   1. Go to [Remix IDE](https://remix.ethereum.org).
+   2. Click on the "Solidity Compiler" tab on the left panel.
+   3. Select the appropriate compiler version.
+   4. Click on "Compile TenderContract.sol".
+   5. Click on the "Solidity Compiler" tab, select the appropriate compiler version, and compile it.
+   6. Click on the "Deploy & Run Transactions" tab.
+   7. Select the environment (JavaScript VM for testing or Injected Web3 for deploying to the Ethereum network using MetaMask) and ensure your MetaMask is connected to the desired network.
+   8. Click on "Deploy" to deploy your contract.
+   9. Copy the contract address to use it in your web application to interact with the deployed contract in the frontend.
+      
+  II. Deploy the contract using truffle and ganache
+   Install Truffle and Ganache:
+   '''sh
+   npm install -g truffle
+   npm install -g ganache-cli
+
+   Initialize Truffle:
+   Inside the project directory, run:
+   '''sh
+   truffle init
+
    
    
