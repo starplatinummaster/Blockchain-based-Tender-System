@@ -31,7 +31,8 @@ This project presents a blockchain-based tender and contract management system d
 3. Install dependencies
    ```sh
    npm install
-4. Compile the smart contract this can be done in two environments:
+   
+## Compile the smart contract this can be done in two environments:
 
   I. Deploying a Smart Contract Using Remix
 
@@ -69,7 +70,7 @@ This project presents a blockchain-based tender and contract management system d
       ```sh
       npm start
       ```
-5. After compiling your smart contract run server.
+## After compiling your smart contract run server.
    ```sh
    node server.js
    ```
