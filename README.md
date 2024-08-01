@@ -25,3 +25,13 @@ This project presents a blockchain-based tender and contract management system d
 1. Clone the repository
    ```sh
    git clone https://github.com/yourusername/blockchain-tender-management.git
+2. Navigate to the project directory
+   ```sh
+   cd blockchain-tender-management
+3. Install dependencies
+   '''sh
+   npm install
+4. Setup the connection between Ganache and Metamask
+5. Compile the smart contract
+   
+   
