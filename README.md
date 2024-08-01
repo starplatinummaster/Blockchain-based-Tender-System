@@ -29,7 +29,7 @@ This project presents a blockchain-based tender and contract management system d
    ```sh
    cd blockchain-tender-management
 3. Install dependencies
-   '''sh
+   ```sh
    npm install
 5. Compile the smart contract this can be done in two environments:
 
@@ -47,13 +47,14 @@ This project presents a blockchain-based tender and contract management system d
       
   II. Deploy the contract using truffle and ganache
    Install Truffle and Ganache:
-   '''sh
+   ```sh
    npm install -g truffle
    npm install -g ganache-cli
+   ```
 
    Initialize Truffle:
    Inside the project directory, run:
-   '''sh
+   ```sh
    truffle init
 
    
