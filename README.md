@@ -47,14 +47,14 @@ This project presents a blockchain-based tender and contract management system d
    9. Copy the contract address to use it in your web application to interact with the deployed contract in the frontend.
       
   II. Deploy the contract using truffle and ganache
-   1.Install Truffle and Ganache:
+   1.Install Truffle and Ganache.
       ```sh
       npm install -g truffle
       npm install -g ganache-cli
       ```
 
    2.Initialize Truffle:
-      Inside the project directory, run:
+      Inside the project directory, run.
       ```sh
       truffle init
       ```
