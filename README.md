@@ -31,7 +31,7 @@ This project presents a blockchain-based tender and contract management system d
 3. Install dependencies
    ```sh
    npm install
-5. Compile the smart contract this can be done in two environments:
+4. Compile the smart contract this can be done in two environments:
 
   I. Deploying a Smart Contract Using Remix
 
@@ -46,16 +46,34 @@ This project presents a blockchain-based tender and contract management system d
    9. Copy the contract address to use it in your web application to interact with the deployed contract in the frontend.
       
   II. Deploy the contract using truffle and ganache
-   Install Truffle and Ganache:
-   ```sh
-   npm install -g truffle
-   npm install -g ganache-cli
-   ```
+   1.Install Truffle and Ganache:
+      ```sh
+      npm install -g truffle
+      npm install -g ganache-cli
+      ```
 
-   Initialize Truffle:
-   Inside the project directory, run:
+   2.Initialize Truffle:
+      Inside the project directory, run:
+      ```sh
+      truffle init
+      ```
+   3.Edit the truffle-config.js file to configure the network settings for deployment on local ganache network. refer to the truffle-config.js
+
+   4. Compile and deploy contract. The migration file is already present so no need to create one.
+      ```sh
+      truffle compile
+      truffle migrate --network development
+      ```
+   5. In your web application, update the contract address and ABI in the JavaScript file that interacts with the contract. Typically, this involves modifying a file like src/js/app.js:
+   6. Run the deveolopement server.
+      ```sh
+      npm start
+      ```
+5. After compiling your smart contract run server.
    ```sh
-   truffle init
+   node server.js
+   ```
+   Your webpage will open in local host
 
    
    
